@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BASS_Sample.MainPage"
+             Title="Firebase Records"
+             >
+    <AbsoluteLayout>
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Picker AutomationId="GenderPicker"  x:Name="PkrGender" ItemsSource="{Binding lstGender}" TextColor="Black"  TitleColor="Black" 
+               SelectedItem="{Binding SelectedGender}" Title="Select Gender"  >
+          
+        </Picker>
+        
+        <Entry AutomationId="Name" Placeholder="Enter Name" x:Name="EntryName" Text="{Binding Name}"></Entry>
+        <Entry AutomationId="Organization" Placeholder="Enter Organization" x:Name="EntryOrg" Text="{Binding OrgName}"></Entry>
+        <Button AutomationId="Save" Text="Save" Command="{Binding CommandSave}" x:Name="btnSave"></Button>
+        <Button AutomationId="Update" Text="Update" Command="{Binding CommandUpdate}" x:Name="btnUpdate" IsVisible="False"></Button>
+        <ListView AutomationId="UserList" ItemsSource="{Binding lstUser}" x:Name="lstBass">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem  
+                                Command="{Binding Path=BindingContext.OnEdit, Source={x:Reference  Name=lstBass}}"                                
+                                       CommandParameter="{Binding .}" Text="Edit"/>
+                            <MenuItem  
+                                Command="{Binding Path=BindingContext.OnDelete, Source={x:Reference Name=lstBass}}"                                
+                                       CommandParameter="{Binding .}" Text="Delete" IsDestructive="True"/>                          
+                        </ViewCell.ContextActions>
+                        <StackLayout Orientation="Horizontal">
+
+                            <Label AutomationId="Gender_List" Text="{Binding Gender}"></Label>
+                            <Label  AutomationId="Name_List" Text="{Binding Name}"></Label>
+                            <Label Text=" from "></Label>
+                            <Label AutomationId="OrgName_List"  Text="{Binding OrgName}"></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            <Label AutomationId="msgLbl" Text="{Binding msg}"></Label>
+        </StackLayout>
+        <StackLayout>
+           
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

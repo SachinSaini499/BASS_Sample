@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BASS_Sample.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ControlTemplate x:Key="CustomNavBar">
+                <Grid>                   
+                    <BoxView/>
+                    <Label Text="Control Template Demo App"
+                           TextColor="White"
+                           VerticalOptions="Center"  />
+                    <ContentPresenter ></ContentPresenter>
+                    <BoxView Color="Black" />
+                    <Label Text="(c) Xamarin 2016"
+                           TextColor="White"
+                           VerticalOptions="Center"/>
+                </Grid>
+            </ControlTemplate>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
