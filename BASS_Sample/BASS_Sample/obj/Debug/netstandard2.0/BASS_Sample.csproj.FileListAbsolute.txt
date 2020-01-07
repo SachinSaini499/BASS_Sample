@@ -1,9 +1,0 @@
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\bin\Debug\netstandard2.0\BASS_Sample.deps.json
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\bin\Debug\netstandard2.0\BASS_Sample.dll
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\BASS_Sample.csprojAssemblyReference.cache
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\App.xaml.g.cs
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\ControlTemplate.xaml.g.cs
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\View\CalculationView.xaml.g.cs
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\BASS_Sample.AssemblyInfoInputs.cache
-D:\AzureDev\BASS_Sample\BASS_Sample\BASS_Sample\obj\Debug\netstandard2.0\BASS_Sample.AssemblyInfo.cs
