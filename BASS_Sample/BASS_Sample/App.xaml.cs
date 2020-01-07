@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +18,8 @@ namespace BASS_Sample
 
         protected override void OnStart()
         {
+            AppCenter.Start("android=a3457f58-9090-474e-b402-268d302916ab;" ,
+                     typeof(Analytics), typeof(Crashes));
             // Handle when your app starts
         }
 
